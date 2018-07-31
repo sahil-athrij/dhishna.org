@@ -1,0 +1,46 @@
+
+title: code.dblock.org | tech blog
+locale: en_US
+url: https://code.dblock.org
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+kramdown:
+  input: GFM
+owner:
+  name: Daniel Doubrovkine
+  avatar: blog.gif
+  bio: "aka dB., CTO at <a href='https://www.artsy.net' target='_blank'>artsy.net</a>, fun at <a href='http://playplay.io' target='_blank'>playplay.io</a>, NYC"
+  email: dblock@dblock.org
+  disqus-shortname: dblockdotorg-code
+  twitter: dblockdotorg
+  facebook:
+  google:
+    plus:
+    analytics: UA-4756101-3
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: dblock
+  stackoverflow:
+  linkedin: dblock
+  instagram:
+  lastfm:
+  tumblr:
+  pinterest:
+  foursquare:
+  steam:
+  dribbble:
+  youtube:
+  soundcloud:
+  strava: dblockdotorg
+paginate: 30
+google_custom_search: "015938957525977311805:c-2lieekft8"
+suggest_url: https://github.com/dblock/code.dblock.org/issues/new
+edit_url: https://github.com/dblock/code.dblock.org/edit/gh-pages/
