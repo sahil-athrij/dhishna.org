@@ -1,7 +1,7 @@
 
-title: code.dblock.org | tech blog
+title: dhishna.org | tech blog
 locale: en_US
-url: https://code.dblock.org
+url: https://dhishna.org
 markdown: kramdown
 sass:
   sass_dir: _sass
