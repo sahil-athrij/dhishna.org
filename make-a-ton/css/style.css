@@ -235,15 +235,25 @@ h1{
 .sec4_alpha_vertical{
   width: 5%;
   writing-mode: vertical-lr;
-  rotate:(90deg);
+  rotate :90deg;
   color: white;
   font-size: 1.5em;
   padding-top: 110px;
   letter-spacing: 5px;
 
 }
+.sec4_alpha_vertical1{
+    width: 5%;
+    writing-mode: vertical-lr;
+    rotate :90deg;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 50%;
+    letter-spacing: 5px;
+
+}
 .sec4_alpha_logos{
-  width: 20%;
+  width: 80%;
   background-color: white;
   height: 80%;
   margin-top: 100px;
@@ -349,64 +359,10 @@ h1{
   border-top: 50px solid #303030;
  
   border-bottom: 100px solid #303030;
-}
-.sec6_beta{
-  width: 30%;
-  background-color: #303030;
-  height: 100%;
-}
-.sec6_alpha{
- 
-  width: 70%;
-  height: 100%;
 
+  left: 50%;
 }
-.sec6_alpha_contents{
-  position: absolute;
-  width: 70%;
-  height: 80%;
-  background-color: #FF9118;
-  left: 20%;
-  top: 10%;
 
-}
-.sec6_alpha_feedback{
-  color: white;
-  padding:20px;
-  font-size: 1.5em;
-   text-align: center;
-}
-.sec6_alpha_contents div{
-  color: white;
-  padding: 20px;
-  font-size: 1.9em;
-  line-height: 40px;
-    letter-spacing: 3px;
-     text-align: center;
-
-}
-.sec6_alpha_contents input{
-  border: none;
-  background-color: unset;
-  /*border-bottom: 2px solid white;*/
- text-align: center;
-  width: 100%;
-  font-size: 1em;
-  color: white;
-}
-.button{
-  width: 100px;
-  height: 50px;
- border-radius: 10px;
-  color: white;
-  border: 2px solid white;
-  padding: 5px 10px;
-}
-.button:hover{
-  background-color: white;
-  color: #FF9118;
-
-}
 /********************************************************/
 /*styling desktop*/
 
@@ -462,9 +418,10 @@ h1{
     writing-mode: horizontal-tb;
     padding-top: 20px;
   }
+
   .sec4_alpha_logos{
-    width: 100%;
-    height: 120px;
+    width: 80%;
+    height: 80%;
     margin-top: 10px;
   }
   .sec4_alpha_logos div{

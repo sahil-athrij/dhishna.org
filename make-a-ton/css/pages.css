@@ -1,0 +1,62 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    height: 100%;
+    width:100%;
+    background-color: #0D061E;
+    ;
+}
+
+#particles-js{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page{
+    height: 100%;
+    width:100%;
+    text-align: center;
+    /*background: #0D061E;*/
+    color:white;
+    z-index: -2
+}
+
+#mainheading{
+    font-size: 5em;
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%);
+
+}
+
+#Introcaption{
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+
+.container1 {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

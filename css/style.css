@@ -14,7 +14,7 @@ body {
 
 
 video {
-    transition: all 1.5s;
+    transition: all 1.0s;
     position: fixed;
     left: 50%;
     top: 0;
@@ -26,6 +26,8 @@ video {
     background-size: cover;
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
+    display:inline-block;
+     background: url("../img/bg.mp4") no-repeat;
 }
 
 .background {
@@ -40,7 +42,35 @@ video {
     background-size: cover;
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
+    opacity: 1;
 }
+
+.ist{
+    z-index: -100;
+
+}
+
+.snd{
+    z-index: -101;
+
+ }
+
+.trd{
+    z-index: -102;
+
+}
+
+.fth{
+    z-index: -103;
+
+}
+
+.ith{
+    z-index: -104;
+
+}
+
+
 
 .box{
     opacity: 0;

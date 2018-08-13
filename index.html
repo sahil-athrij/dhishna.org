@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DISHNA 2K18</title>
+    <meta name="google-site-verification" content="TS_j8JOsRkZfeE1Urg1si-7pjSJKPZTsjpw7eGfJBoA" />
+    <meta  charset="UTF-8" name=“description” content='The annual techfest of School of Engineering,  CUSAT, Kochi - Dhishna, is an untainted endeavour to mould a budding generation to better thinkers and achievers. '>
+    <title>DHISHNA 2K18</title>
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
@@ -23,7 +25,20 @@
 
 </head>
 <body>
+<script>
+    var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
+    var firefox  = navigator.userAgent.indexOf('Firefox') > -1;
+    var safari   = navigator.userAgent.indexOf("Safari") > -1;
+    var explorer = navigator.userAgent.indexOf('MSIE') > -1;
+    var edge     = navigator.userAgent.indexOf("Edge") > -1
 
+    if(!(firefox||chrome||safari||explorer||edge)){
+        alert("use firefox or chrome for safari for optimum experience");
+        window.location.href="alternate.html"
+
+    }
+</script>
+<p style="opacity:0">The annual techfest of School of Engineering,  CUSAT, Kochi - Dhishna, is an untainted endeavour to mould a budding generation to better thinkers and achievers. </p>
 
 <img class='box' id='box' src="img/logo.svg">
 
@@ -34,6 +49,7 @@
 
 
 <img src ="img/bg.png" class = 'background'>
+    
 <video muted playsinline id="video" >
     <source src="img/bg.mp4" type="video/mp4">
 </video>
@@ -49,6 +65,7 @@
 <div class="car" id="hider">
     <img src="img/logo.svg" onclick="deletediv()" id='logo'>
     <img src="img/logo.svg" onclick="deletediv()" id='logo1' class = pulse>
+    <p class="button">click the logo</p>
 </div>
 
 
@@ -122,7 +139,7 @@
 
 </div>
 
-<img src="img/scroll.gif" class="scroll">
+<img src="img/scroll.gif" class="scroll" onclick = "scrolldown()">
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/script3.js"></script>
 <script type="text/javascript" src="js/popup.js"></script>

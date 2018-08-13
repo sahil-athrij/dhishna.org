@@ -5,7 +5,7 @@
 
 
 
-
+var buttonscroll ="no";
 
 sct = $(document).scrollTop();
 function scrollVideo() {
@@ -13,52 +13,60 @@ function scrollVideo() {
             scrollPosition = $(document).scrollTop();
 
 
-        if(stopped == "no" && sct-scrollPosition<0) {
-
+        if((stopped == "no" && sct-scrollPosition<0) || buttonscroll ==="yes") {
+            buttonscroll="no";
             if (displayed == "no") {
-                video.play();
-                if (secc1animate == 0) {
-                    removediv("#secc1", "#landscape");
-                    secc1animate = 2;
-
-                }
-
+                video.play()
             }
+
+
 
 
             else if (displayed2 == "no") {
                 video.play();
-                if (secc2animate == 0) {
 
-                    removediv("#secc2", "#mountains");
-                    secc21animate = 2;
-
-                }
 
 
             }
 
             else if (displayed3 == "no") {
-                video.play()
-                if (secc3animate == 0) {
+                video.play();
 
-                    removediv("#secc3", "#clouds");
-                    secc3animate = 2;
-
-                }
             }
 
 
             else if (displayed4 == "no") {
-                video.play()
-                if (secc4animate == 0) {
+                video.play();
 
-                    removediv("#secc4", "#clouds");
-                    secc4animate = 2;
-
-                }
             }
         }
+
+    if (secc1animate == 0) {
+        removediv("#secc1", "#landscape");
+        secc1animate = 2;
+
+    }
+
+    if (secc2animate == 0) {
+
+        removediv("#secc2", "#mountains");
+        secc21animate = 2;
+
+    }
+
+    if (secc3animate == 0) {
+
+        removediv("#secc3", "#clouds");
+        secc3animate = 2;
+
+    }
+
+    if (secc4animate == 0) {
+
+        removediv("#secc4", "#clouds");
+        secc4animate = 2;
+
+    }
         sct = scrollPosition;
 
 
@@ -88,6 +96,12 @@ var video = $('video').get(0);
 video.addEventListener("timeupdate", function(){
     console.log(this.currentTime);
     if(this.currentTime >= .3 && this.currentTime<=.8){
+
+        if (secc1animate == 0) {
+            removediv("#secc1", "#landscape");
+            secc1animate = 2;
+
+        }
     }
 
 
@@ -108,9 +122,18 @@ video.addEventListener("timeupdate", function(){
         this.pause();
         displayed = "yes";
         displayed2 = "no";
+
     }
 
 
+    else if(this.currentTime >= 1.8 && this.currentTime<3.0) {
+        if (secc2animate == 0) {
+
+            removediv("#secc2", "#mountains");
+            secc21animate = 2;
+
+        }
+    }
 
     else if(this.currentTime >= 3.0 && this.currentTime<=3.3){
         if(secc3animate){
@@ -128,6 +151,17 @@ video.addEventListener("timeupdate", function(){
         displayed3 = "no";
     }
 
+    else if(this.currentTime >= 3.7 && this.currentTime<4.6) {
+        if (secc3animate == 0) {
+
+            removediv("#secc3", "#clouds");
+            secc3animate = 2;
+
+        }
+
+    }
+
+
     else if(this.currentTime >= 4.6 && this.currentTime<=4.9){
         if(secc4animate){
             secc4animate = 0;
@@ -138,7 +172,7 @@ video.addEventListener("timeupdate", function(){
 
     }
 
-    else if(this.currentTime >= 5 && this.currentTime<=5.2){
+    else if(this.currentTime >= 5 && this.currentTime<=5.3){
         this.pause();
         displayed = "yes";
         displayed2 = "yes";
@@ -146,7 +180,19 @@ video.addEventListener("timeupdate", function(){
         displayed4 = "no";
     }
 
+    else if(this.currentTime >= 5.3 && this.currentTime<7.0) {
+        if (secc4animate == 0) {
+
+            removediv("#secc4", "#clouds");
+            secc4animate = 2;
+
+        }
+
+    }
+
+
     else if(this.currentTime >= 7.1){
+
         this.pause();
         displayed = "yes";
         displayed2 = "yes";
@@ -323,4 +369,10 @@ function removeBlur(){
     $('video').css("-webkit-filter" ,"blur(0px) brightness(100%)");
     $('video').css("-moz-filter" ,"blur(0px)");
     $('video').css("-ms-filter" ,"blur(0px)");
+}
+
+
+function scrolldown(){
+    buttonscroll = "yes";
+    scrollVideo()
 }
